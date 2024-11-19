@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/display"
+            android:layout_width="150sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:text="Forward"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="150sp"
+                android:layout_height="100sp"
+                android:layout_toLeftOf="@id/stop"
+                android:layout_weight="1"
+                android:background="#77FF00"
+                android:text="Left"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="150sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="stop"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="150sp"
+                android:layout_height="100sp"
+                android:layout_toRightOf="@id/stop"
+                android:layout_weight="1"
+                android:background="#77FF00"
+                android:text="Right"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:text="Back"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/mode"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:layout_marginTop="30sp"
+            android:layout_toEndOf="@id/back"
+            android:text="자동 모드 변환"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/pmode"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:layout_marginTop="30sp"
+            android:layout_toEndOf="@id/back"
+            android:text="수동 모드 변환"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:layout_marginTop="30sp"
+            android:layout_toEndOf="@id/back"
+            android:text="연결"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#00F7FF"
+            android:layout_marginTop="30sp"
+            android:layout_toEndOf="@id/back"
+            android:text="보내기"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
